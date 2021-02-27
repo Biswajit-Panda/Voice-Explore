@@ -1,0 +1,51 @@
+{% block body %}
+    <div>
+        <form action="{{ url_for('profile') }}" method="POST">
+            <div>
+                <div>
+                    <label for="name">Name</label>
+                    <input type="text" name="person1" placeholder="Your Name">
+                </div>
+                <div>
+                    <label for="email">Email Id</label>
+                    <input type="email" name="email1" placeholder="Email Id">
+                </div>
+                <div>
+                    <label for="PhoneNo">Phone Number</label>
+                    <input type="tel" name="phone1" pattern="[0-9]{10}" placeholder="0123456789">
+                </div>
+            </div>
+            <div>
+                <div>
+                    <label for="name">Name</label>
+                    <input type="text" name="person2" placeholder="Your Name">
+                </div>
+                <div>
+                    <label for="email">Email Id</label>
+                    <input type="email" name="email2" placeholder="Email Id">
+                </div>
+                <div>
+                    <label for="PhoneNo">Phone Number</label>
+                    <input type="tel" name="phone2" pattern="[0-9]{10}" placeholder="0123456789">
+                </div>
+            </div>
+            <div>
+                <div>
+                    <label for="name">Name</label>
+                    <input type="text" name="person3" placeholder="Your Name">
+                </div>
+                <div>
+                    <label for="email">Email Id</label>
+                    <input type="email" name="email3" placeholder="Email Id">
+                </div>
+                <div>
+                    <label for="PhoneNo">Phone Number</label>
+                    <input type="tel" name="phone3" pattern="[0-9]{10}" placeholder="0123456789">
+                </div>
+            </div>
+            <div>
+                <button type="submit">Add Relatives</button>
+            </div>
+        </form>
+    </div>
+{% endblock %}

@@ -1,0 +1,21 @@
+{% extends "layout.html" %}
+{% block body %}
+<div>
+        <form action="{{ url_for('register') }}" method="POST">
+        <div>
+            <label>Name</label>
+            <input type="text" name="name" placeholder="Your Name">
+        </div>
+        <div>
+            <label>Email</label>
+            <input type="email" name="email" placeholder="Email Id">
+        </div>
+        <div>
+            <label>Password</label>
+            <input type="password" name="password" placeholder="Password">
+        </div>
+        <button type="submit">Sign Up</button>
+    </form>
+    {{ invalid_data }}
+</div>
+{% endblock %}
